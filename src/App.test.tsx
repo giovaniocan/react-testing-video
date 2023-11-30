@@ -26,6 +26,12 @@ describe ('Nome do componente', () => {
         fireEvent.click(button) // aqui estamos clicando no button
 
         screen.getByText("new message") // para ver se a mensagem mudou na tela
+   
+        const oldMesage = screen.queryByText("Let's learn more about testing in React") // para ver se a mensagem inicial esta na tela
+        // a query quando não acha, ela não falha o teste, diferente do getByText que falha o teste, então a gente pode ver se tem essa mensagem ainda ou não
+
+        expect(oldMesage).not.toBeInTheDocument() // a gente ta garantindo se nao esta na tela, mas sem falhar o teste, pois a funcao dele é ver se realemnte nao esta na tela
+
     })
 })
 
