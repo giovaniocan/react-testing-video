@@ -15,6 +15,8 @@ import { ReactNode } from "react";
         <button
             style={{
                 backgroundColor: disabled ? 'red' : 'blue',
+                color: 'white',
+                padding: '10px',
             }}
             onClick={() => onClick(10)}
         >
