@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react"
-import Button  from "./button"
+import Button  from "./components/button"
 
 // esse teste é para mostrar como testar estilos, e não devemos ficar fazendo isso, a não ser quando a funcionalidade de um botão se altere atravez do estilo
 // ex: se o botão for desabilitado, o background deve ser vermelho
